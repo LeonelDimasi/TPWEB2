@@ -1,0 +1,25 @@
+<div class="publicacion col-xl-12">
+  <form>
+    <div class="form-group">
+      <div class="form-group">
+        <label for="nombre_usuario">usuario :{{usuario}}</label>
+      </div>
+
+      <label for="exampleFormControlTextarea1">jugador preferido:</label>
+       <select class="custom-select" id="jugador">
+         {{#each Jugadores}}
+           <option value={{id_jugador}} >{{nombre_jugador}}</option>
+          {{/each}}
+       </select>
+
+      <label for="exampleFormControlTextarea1">comentario</label>
+      <textarea class="form-control" id="comentario" rows="3"></textarea>
+      <div class="form-group">
+      <label for="exampleFormControlFile1">adjuntar imagen</label>
+      <input type="file" class="form-control-file" id="imagen">
+    </div>
+    </div>
+
+  </form>
+    <button  id="js-addComentario" >crear</button>
+</div>
