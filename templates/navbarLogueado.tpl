@@ -19,7 +19,9 @@
       </ul>
     </div>
     <form class="form-inline">
-   <h1 class="usuario" value={$usuario["0"]['id_usuario']} id="nombre-usuario">{$usuario["0"]['nombre']}</h1>
+
+      <input id="id-usuario" type="hidden" name="" value="{$usuario["0"]['id_usuario']}">
+   <h1 class="usuario"id="nombre-usuario">{$usuario["0"]['nombre']}</h1>
     <a class="btn btn-danger btn-block" href="logout" role="button">Log Out</a>
 
 
